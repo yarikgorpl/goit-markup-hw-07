@@ -1,0 +1,45 @@
+.location:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.location__map {
+    color: $hero-footer-text-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.location__mail,
+.location__phone {
+    color: $contact-footer-text-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.location__map:hover,
+.location__map:focus {
+    color: $accent-color;
+}
+
+.location__mail:hover,
+.location__mail:focus {
+    color: $accent-color;
+}
+
+.location__phone:hover,
+.location__phone:focus {
+    color: $accent-color;
+}
