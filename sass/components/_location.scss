@@ -13,7 +13,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+&:hover,
+    &:focus {
+        color: $accent-color;
+    }}
 
 .location__mail,
 .location__phone {
@@ -27,19 +30,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            color: $accent-color;
+        }
 }
 
-.location__map:hover,
-.location__map:focus {
-    color: $accent-color;
-}
 
-.location__mail:hover,
-.location__mail:focus {
-    color: $accent-color;
-}
 
-.location__phone:hover,
-.location__phone:focus {
-    color: $accent-color;
-}
+

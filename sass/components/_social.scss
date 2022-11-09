@@ -17,20 +17,19 @@
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+&:hover,
+    &:focus {
+        fill: $hero-footer-text-color;
+        background-color: $accent-color;
+    }}
 
-.social-list__item:hover,
-.social-list__item:focus {
-    fill: $hero-footer-text-color;
-    background-color: $accent-color;
-}
+
 .social-list__item--inverse {
     fill: $hero-footer-text-color;
     background-color: $footer-social-background-color;
-}
+&:hover,
+    &:focus {
+        fill: $hero-footer-text-color;
+        background-color: $accent-color;
+    }}
 
-.social-list__item--inverse:hover,
-.social-list__item--inverse:focus {
-    fill: $hero-footer-text-color;
-    background-color: $accent-color;
-}

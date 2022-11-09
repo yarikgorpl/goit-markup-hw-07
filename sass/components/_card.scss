@@ -33,12 +33,13 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.card__link:hover &,
+    .card__link:focus & {
+        transform: translateY(0);
+    }
 }
 
-.card__link:hover .descr__overlay,
-.card__link:focus .descr__overlay {
-    transform: translateY(0);
-}
+
 
 .descr__text {
     position: absolute;
@@ -46,21 +47,18 @@
     padding: 63px 24px;
 }
 
-.card .card-thumb:hover {
-    transform: translateY(0);
-}
 
 .card__link {
     display: block;
     text-decoration: none;
-}
+&:hover,
+    &:focus {
+        color: $accent-color;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }}
 
-.card__link:hover,
-.card__link:focus {
-    color: $accent-color;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 
 .card__description {
     border: 1px solid $portfolio-background-color;

@@ -1,19 +1,5 @@
-@import "./utils/variables";
-@import "./bases/normalize";
-@import "./bases/base";
-@import "./bases/reset";
-@import "./components/header";
-@import "./components/logo";
-@import "./components/site-nav";
-@import "./components/contact";
-@import "./components/location";
-@import "./components/hero";
-@import "./components/preferenses";
-@import "./components/development";
-@import "./components/command";
-@import "./components/social";
-@import "./components/footer";
-@import "./components/clients";
-@import "./components/filter";
-@import "./components/card";
-@import "./components/modal";
+@import "./utils/index";
+@import "./bases/index";
+@import "./components/index"
+
+

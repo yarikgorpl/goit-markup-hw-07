@@ -38,10 +38,9 @@
     transition-property: fill, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+&:hover,
+    &:focus {
+        fill: $accent-color;
+        border-color: $accent-color;
+    }}
 
-.clients__logo:hover,
-.clients__logo:focus {
-    fill: $accent-color;
-    border-color: $accent-color;
-}
